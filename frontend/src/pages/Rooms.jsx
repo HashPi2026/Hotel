@@ -1,13 +1,16 @@
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
+import king from "../photo/KING 4.jpg";
+import queen from "../photo/QUEEN 2.jpg";
+import suite from "../photo/SUITE 5.jpg";
 import { Users, Bed, Check, Maximize } from "lucide-react";
 
 const rooms = [
   {
     id: "king",
     name: "Non-Smoking King",
-    image: "https://images.unsplash.com/photo-1759264244726-adde4e4318fc?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHw0fHxob3RlbCUyMGJlZHJvb20lMjBtb2Rlcm4lMjBjbGVhbiUyMGludGVyaW9yfGVufDB8fHx8MTc3MTQ5NDcyMHww&ixlib=rb-4.1.0&q=85&w=800",
+    image: king,
     description: "Spacious room featuring one king-size bed, perfect for couples seeking comfort and relaxation.",
     price: 99,
     capacity: 2,
@@ -18,7 +21,7 @@ const rooms = [
   {
     id: "queens",
     name: "Non-Smoking 2 Queens",
-    image: "https://images.unsplash.com/photo-1763419161907-1e00b2f883c5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHwzfHxob3RlbCUyMGJlZHJvb20lMjBtb2Rlcm4lMjBjbGVhbiUyMGludGVyaW9yfGVufDB8fHx8MTc3MTQ5NDcyMHww&ixlib=rb-4.1.0&q=85&w=800",
+    image: queen,
     description: "Ideal for families or groups, this room offers two comfortable queen-size beds.",
     price: 119,
     capacity: 4,
@@ -29,7 +32,7 @@ const rooms = [
   {
     id: "ada",
     name: "ADA Accessible Room",
-    image: "https://images.unsplash.com/photo-1590490360182-c33d57733427?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=800",
+    image: suite,
     description: "Fully accessible room with mobility features, roll-in shower, and grab bars for guest comfort.",
     price: 109,
     capacity: 2,

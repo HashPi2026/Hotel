@@ -2,21 +2,24 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
+import image1 from "../photo/MOTEL SIGN.jpg";
+import image2 from "../photo/MOTEL EXTERIOR 2.jpg";
+import image3 from "../photo/POOL 1.jpg"
 import { ChevronLeft, ChevronRight, MapPin, Star, Users, Ban, Waves, Car, Wifi, Coffee, Shield, ArrowRight } from "lucide-react";
 
 const heroSlides = [
   {
-    image: "https://images.pexels.com/photos/27890859/pexels-photo-27890859.jpeg?auto=compress&cs=tinysrgb&w=1920",
+    image: image1,
     title: "Relax & Stay Near the White Sands of Destin",
     subtitle: "Your perfect Florida beach getaway awaits"
   },
   {
-    image: "https://images.pexels.com/photos/2833394/pexels-photo-2833394.jpeg?auto=compress&cs=tinysrgb&w=1920",
+    image: image2,
     title: "Experience the Emerald Coast",
     subtitle: "Crystal clear waters just minutes away"
   },
   {
-    image: "https://images.pexels.com/photos/9399911/pexels-photo-9399911.jpeg?auto=compress&cs=tinysrgb&w=1920",
+    image: image3,
     title: "Unwind by the Pool",
     subtitle: "Relax and refresh at our outdoor pool"
   }
