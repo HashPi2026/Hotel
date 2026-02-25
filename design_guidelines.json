@@ -1,0 +1,143 @@
+{
+  "project_name": "Destine Inn & Suites",
+  "design_philosophy": {
+    "theme": "Coastal Calm & Trustworthy",
+    "core_values": [
+      "Relaxation",
+      "Family-Friendly",
+      "Transparent Pricing",
+      "Florida Charm"
+    ],
+    "mood_board": "White sands, emerald waters, sun-bleached wood, crisp linens, warm hospitality."
+  },
+  "typography": {
+    "font_family": {
+      "headings": "Playfair Display, serif",
+      "body": "Manrope, sans-serif",
+      "accent": "La Belle Aurore, cursive"
+    },
+    "scale": {
+      "h1": "text-5xl md:text-7xl font-bold tracking-tight leading-none",
+      "h2": "text-4xl md:text-5xl font-semibold tracking-tight",
+      "h3": "text-2xl md:text-3xl font-medium",
+      "body_large": "text-lg md:text-xl leading-relaxed",
+      "body_base": "text-base leading-relaxed text-muted-foreground",
+      "caption": "text-sm uppercase tracking-widest text-muted-foreground"
+    }
+  },
+  "colors": {
+    "palette": {
+      "primary": {
+        "DEFAULT": "#006994",
+        "foreground": "#FFFFFF",
+        "hover": "#00567a"
+      },
+      "secondary": {
+        "DEFAULT": "#F9F6F0",
+        "foreground": "#1A1A1A"
+      },
+      "accent": {
+        "DEFAULT": "#20B2AA",
+        "foreground": "#FFFFFF"
+      },
+      "background": "#FFFFFF",
+      "surface": "#F5F5F5",
+      "text": {
+        "primary": "#1A202C",
+        "secondary": "#718096"
+      },
+      "border": "#E2E8F0"
+    },
+    "usage": {
+      "primary": "Main CTAs, Headers, Active States",
+      "secondary": "Section Backgrounds, Cards (Subtle)",
+      "accent": "Icons, Badges, Highlights",
+      "background": "Page Backgrounds"
+    }
+  },
+  "layout": {
+    "grid_system": "grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-12",
+    "container": "container mx-auto px-4 md:px-8 max-w-7xl",
+    "spacing": {
+      "section_py": "py-16 md:py-24",
+      "element_mb": "mb-8"
+    },
+    "z_index": {
+      "navbar": "z-50",
+      "modal": "z-50",
+      "dropdown": "z-40",
+      "hero_content": "z-10"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-8 py-6 text-lg font-medium shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1",
+      "secondary": "bg-white text-primary border-2 border-primary hover:bg-primary/5 rounded-full px-8 py-6 text-lg font-medium transition-all duration-300",
+      "ghost": "text-primary hover:text-primary/80 hover:bg-transparent font-medium"
+    },
+    "cards": {
+      "room_card": "group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-500 border border-border/50",
+      "feature_card": "bg-secondary/50 p-8 rounded-xl hover:bg-white hover:shadow-lg transition-all duration-300 border border-transparent hover:border-border"
+    },
+    "inputs": {
+      "default": "rounded-lg border-border focus:ring-2 focus:ring-primary/20 focus:border-primary bg-white h-12"
+    }
+  },
+  "motion": {
+    "transitions": "transition-all duration-300 ease-out",
+    "hover_effects": "hover:-translate-y-1 hover:shadow-lg",
+    "page_load": "animate-in fade-in slide-in-from-bottom-4 duration-700"
+  },
+  "image_strategy": {
+    "hero": {
+      "url": "https://images.pexels.com/photos/27890859/pexels-photo-27890859.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "alt": "Aerial view of Destin Florida Emerald Coast",
+      "overlay": "bg-black/20"
+    },
+    "rooms": [
+      {
+        "type": "King Suite",
+        "url": "https://images.unsplash.com/photo-1759264244726-adde4e4318fc?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHw0fHxob3RlbCUyMGJlZHJvb20lMjBtb2Rlcm4lMjBjbGVhbiUyMGludGVyaW9yfGVufDB8fHx8MTc3MTQ5NDcyMHww&ixlib=rb-4.1.0&q=85",
+        "alt": "King Bed Ocean View"
+      },
+      {
+        "type": "Double Queen",
+        "url": "https://images.unsplash.com/photo-1763419161907-1e00b2f883c5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHwzfHxob3RlbCUyMGJlZHJvb20lMjBtb2Rlcm4lMjBjbGVhbiUyMGludGVyaW9yfGVufDB8fHx8MTc3MTQ5NDcyMHww&ixlib=rb-4.1.0&q=85",
+        "alt": "Double Queen Room"
+      }
+    ],
+    "amenities": [
+      {
+        "type": "Pool",
+        "url": "https://images.pexels.com/photos/9399911/pexels-photo-9399911.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Resort Pool"
+      },
+      {
+        "type": "Beach",
+        "url": "https://images.pexels.com/photos/2833394/pexels-photo-2833394.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Family on Beach"
+      }
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Install 'lucide-react' for icons.",
+    "Install 'date-fns' for date manipulation.",
+    "Install 'react-day-picker' for the calendar component (if using shadcn/ui calendar).",
+    "Ensure the booking flow is a multi-step process: Availability -> Guest Details -> Payment -> Confirmation.",
+    "Use the provided image URLs for specific sections. Do NOT use placeholders.",
+    "Implement a 'Sticky Booking Bar' on the bottom of mobile screens or top of desktop screens.",
+    "Create a 'Gallery' component with a simple lightbox modal.",
+    "The 'Contact' page must include a Google Maps embed (iframe).",
+    "For the 'RoomCard' component, ensure the price is prominent and per night.",
+    "Use the 'Manrope' font for body text to ensure high readability.",
+    "Use 'Playfair Display' for all Headings (H1-H4) to give the hotel feel.",
+    "Add 'data-testid' to all interactive elements."
+  ],
+  "universal_guidelines": [
+    "Do not use generic centered layouts. Use asymmetry where appropriate.",
+    "Use 2-3x more spacing than typical designs.",
+    "Dark colors look good when used independently without gradients.",
+    "Every interaction needs micro-animations.",
+    "Use glass-morphism effects with backdrop filters for overlays."
+  ]
+}
