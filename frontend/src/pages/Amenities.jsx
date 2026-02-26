@@ -1,6 +1,11 @@
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
+import Ame from "../photo/POOL & PARKING VIEW.jpg";
+import pool from "../photo/POOL 2.jpg";
+import room from "../photo/KING 4.jpg";
+import coff from "../photo/COFFEE.jpg";
+import cleanliness from "../photo/SINK MIRROR.jpg";
 import { 
   Wifi, 
   Car, 
@@ -90,7 +95,7 @@ export default function Amenities() {
       {/* Hero */}
       <section className="relative h-[40vh] min-h-[300px] overflow-hidden" data-testid="amenities-hero">
         <img
-          src="https://images.pexels.com/photos/9399911/pexels-photo-9399911.jpeg?auto=compress&cs=tinysrgb&w=1920"
+          src={Ame}
           alt="Amenities"
           className="w-full h-full object-cover"
         />
@@ -141,7 +146,7 @@ export default function Amenities() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="img-zoom rounded-2xl overflow-hidden shadow-xl">
               <img
-                src="https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src={pool}
                 alt="Hotel Pool"
                 className="w-full h-[400px] object-cover"
               />
@@ -182,7 +187,7 @@ export default function Amenities() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-white rounded-xl shadow-md overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1759264244726-adde4e4318fc?crop=entropy&cs=srgb&fm=jpg&w=600"
+                src={room}
                 alt="Comfortable Beds"
                 className="w-full h-48 object-cover"
               />
@@ -198,7 +203,7 @@ export default function Amenities() {
 
             <div className="bg-white rounded-xl shadow-md overflow-hidden">
               <img
-                src="https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=600"
+                src={coff}
                 alt="Modern Amenities"
                 className="w-full h-48 object-cover"
               />
@@ -214,7 +219,7 @@ export default function Amenities() {
 
             <div className="bg-white rounded-xl shadow-md overflow-hidden">
               <img
-                src="https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=600"
+                src={cleanliness}
                 alt="Clean Spaces"
                 className="w-full h-48 object-cover"
               />

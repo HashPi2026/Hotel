@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import king from "../photo/KING 4.jpg";
 import queen from "../photo/QUEEN 2.jpg";
 import suite from "../photo/SUITE 5.jpg";
+import banner from "../photo/2ND FLOOR LOBBY.jpg";
 import { Users, Bed, Check, Maximize } from "lucide-react";
 
 const rooms = [
@@ -53,7 +54,7 @@ export default function Rooms() {
       {/* Hero Section */}
       <section className="relative h-[40vh] min-h-[300px] overflow-hidden" data-testid="rooms-hero">
         <img
-          src="https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=1920"
+          src={banner}
           alt="Hotel Rooms"
           className="w-full h-full object-cover"
         />

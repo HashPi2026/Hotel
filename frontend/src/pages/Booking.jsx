@@ -10,6 +10,9 @@ import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
 import { format, addDays, differenceInDays } from "date-fns";
+import king from "../photo/KING 4.jpg";
+import queen from "../photo/QUEEN 2.jpg";
+import suite from "../photo/SUITE 5.jpg";
 import { CalendarIcon, Users, Check, CreditCard, Building, Shield, ChevronRight, X, Plus, Minus } from "lucide-react";
 import { toast } from "sonner";
 
@@ -17,7 +20,7 @@ const rooms = [
   {
     id: "king",
     name: "Non-Smoking King",
-    image: "https://images.unsplash.com/photo-1759264244726-adde4e4318fc?crop=entropy&cs=srgb&fm=jpg&w=400",
+    image: king,
     price: 99,
     capacity: 2,
     deal: "Best Value"
@@ -25,7 +28,7 @@ const rooms = [
   {
     id: "queens",
     name: "Non-Smoking 2 Queens",
-    image: "https://images.unsplash.com/photo-1763419161907-1e00b2f883c5?crop=entropy&cs=srgb&fm=jpg&w=400",
+    image: queen,
     price: 119,
     capacity: 4,
     deal: "Family Favorite"
@@ -33,7 +36,7 @@ const rooms = [
   {
     id: "ada",
     name: "ADA Accessible Room",
-    image: "https://images.unsplash.com/photo-1590490360182-c33d57733427?crop=entropy&cs=srgb&fm=jpg&w=400",
+    image: suite,
     price: 109,
     capacity: 2,
     deal: null

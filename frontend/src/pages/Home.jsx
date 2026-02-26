@@ -4,7 +4,10 @@ import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
 import image1 from "../photo/MOTEL SIGN.jpg";
 import image2 from "../photo/MOTEL EXTERIOR 2.jpg";
-import image3 from "../photo/POOL 1.jpg"
+import image3 from "../photo/POOL 1.jpg";
+import king from "../photo/KING 1.jpg";
+import queen from "../photo/QUEEN 1.jpg";
+import suite from "../photo/SUITE 3.jpg";
 import { ChevronLeft, ChevronRight, MapPin, Star, Users, Ban, Waves, Car, Wifi, Coffee, Shield, ArrowRight } from "lucide-react";
 
 const heroSlides = [
@@ -44,17 +47,17 @@ const rooms = [
   {
     id: "king",
     name: "Non Smoking King",
-    image: "https://images.unsplash.com/photo-1759264244726-adde4e4318fc?crop=entropy&cs=srgb&fm=jpg&w=600"
+    image: king,
   },
   {
     id: "queens",
     name: "Non Smoking 2 Queens",
-    image: "https://images.unsplash.com/photo-1763419161907-1e00b2f883c5?crop=entropy&cs=srgb&fm=jpg&w=600"
+    image: queen,
   },
   {
     id: "ada",
     name: "Non Smoking King - ADA",
-    image: "https://images.unsplash.com/photo-1590490360182-c33d57733427?crop=entropy&cs=srgb&fm=jpg&w=600"
+    image: suite,
   }
 ];
 
