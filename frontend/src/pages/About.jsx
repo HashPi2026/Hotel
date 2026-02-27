@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
 import { Heart, Shield, Star, Users } from "lucide-react";
+import image1 from "../photo/PARKING ROOM VIEW.jpg";
+import image2 from "../photo/FRONT OFFICE INTERIOR 1.jpg";
 
 const values = [
   {
@@ -37,7 +39,7 @@ export default function About() {
       {/* Hero */}
       <section className="relative h-[40vh] min-h-[300px] overflow-hidden" data-testid="about-hero">
         <img
-          src="https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=1920"
+          src={image1}
           alt="About Us"
           className="w-full h-full object-cover"
         />
@@ -76,7 +78,7 @@ export default function About() {
             </div>
             <div className="relative">
               <img
-                src="https://images.pexels.com/photos/2833394/pexels-photo-2833394.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src={image2}
                 alt="Beach Family"
                 className="rounded-2xl shadow-xl"
               />

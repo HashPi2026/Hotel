@@ -1,71 +1,186 @@
 import { useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
-
+import exterior1 from "../photo/MOTEL SIGN.jpg";
+import exterior2 from "../photo/MOTEL EXTERIOR 1.jpg";
+import exterior3 from "../photo/MOTEL EXTERIOR 2.jpg";
+import exterior4 from "../photo/FRONT OFFICE.jpg";
+import exterior5 from "../photo/FRONT OFFICE INTERIOR 1.jpg";
+import exterior6 from "../photo/FRONT OFFICE INTERIOR 2.jpg";
+import exterior7 from "../photo/2ND FLOOR LOBBY.jpg";
+import king1 from "../photo/KING 1.jpg";
+import king2 from "../photo/KING 2.jpg";
+import king3 from "../photo/KING 3.jpg";
+import king4 from "../photo/KING 4.jpg";
+import king5 from "../photo/KING 5.jpg";
+import queen1 from "../photo/QUEEN 1.jpg";
+import queen2 from "../photo/QUEEN 2.jpg";
+import suite1 from "../photo/SUITE 1.jpg";
+import suite2 from "../photo/SUITE 2.jpg";
+import suite3 from "../photo/SUITE 3.jpg";
+import suite4 from "../photo/SUITE 4.jpg";
+import suite5 from "../photo/SUITE 5.jpg";
+import Interior1 from "../photo/SINK MIRROR.jpg";
+import Interior2 from "../photo/COFFEE.jpg";
+import Interior3 from "../photo/SHOWER.jpg";
+import pool1 from "../photo/POOL 1.jpg";
+import pool2 from "../photo/POOL 2.jpg";
+import pool3 from "../photo/POOL 3.jpg";
+import pool4 from "../photo/POOL 4.jpg";
+import parking1 from "../photo/PARKING ROOM VIEW.jpg";
+import parking2 from "../photo/POOL & PARKING VIEW.jpg";
+import dryer from "../photo/ICE, WASHING & DRYER.jpg";
 const galleryImages = [
-  {
-    src: "https://images.pexels.com/photos/27890859/pexels-photo-27890859.jpeg?auto=compress&cs=tinysrgb&w=800",
-    alt: "Destin Beach Aerial View",
-    category: "Beach"
+    {
+    src: exterior1,
+    alt: "Destine Inn & Suites",
+    category: "Exterior"
   },
   {
-    src: "https://images.unsplash.com/photo-1759264244726-adde4e4318fc?crop=entropy&cs=srgb&fm=jpg&w=800",
+    src: exterior2,
+    alt: "Destine Inn & Suites",
+    category: "Exterior"
+  },
+  {
+    src: exterior3,
+    alt: "Destine Inn & Suites",
+    category: "Exterior"
+  },
+    {
+    src: exterior4,
+    alt: "Destine Inn & Suites Office",
+    category: "Exterior"
+  },
+      {
+    src: exterior5,
+    alt: "Destine Inn & Suites Office",
+    category: "Exterior"
+  },
+  {
+    src: exterior6,
+    alt: "Destine Inn & Suites Office",
+    category: "Exterior"
+  },
+  {
+    src: exterior7,
+    alt: "Destine Inn & Suites Lobby",
+    category: "Exterior"
+  },
+  {
+    src: king1,
+    alt: "King Room",
+    category: "Rooms"
+  },
+    {
+    src: king2,
+    alt: "King Room",
+    category: "Rooms"
+  },
+    {
+    src: king3,
+    alt: "King Room Interior",
+    category: "Rooms"
+  },
+    {
+    src: king4,
+    alt: "King Room",
+    category: "Rooms"
+  },
+    {
+    src: king5,
     alt: "King Room",
     category: "Rooms"
   },
   {
-    src: "https://images.unsplash.com/photo-1763419161907-1e00b2f883c5?crop=entropy&cs=srgb&fm=jpg&w=800",
+    src: queen1,
     alt: "Double Queen Room",
     category: "Rooms"
   },
   {
-    src: "https://images.pexels.com/photos/9399911/pexels-photo-9399911.jpeg?auto=compress&cs=tinysrgb&w=800",
-    alt: "Hotel Pool",
-    category: "Pool"
-  },
-  {
-    src: "https://images.pexels.com/photos/2833394/pexels-photo-2833394.jpeg?auto=compress&cs=tinysrgb&w=800",
-    alt: "Beach Family Fun",
-    category: "Beach"
-  },
-  {
-    src: "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800",
-    alt: "Hotel Exterior",
-    category: "Exterior"
-  },
-  {
-    src: "https://images.unsplash.com/photo-1590490360182-c33d57733427?crop=entropy&cs=srgb&fm=jpg&w=800",
-    alt: "ADA Accessible Room",
+    src: queen2,
+    alt: "Double Queen Room",
     category: "Rooms"
   },
   {
-    src: "https://images.pexels.com/photos/1268855/pexels-photo-1268855.jpeg?auto=compress&cs=tinysrgb&w=800",
-    alt: "Sunset at Beach",
-    category: "Beach"
+    src: suite5,
+    alt: "Suite",
+    category: "Rooms"
   },
   {
-    src: "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=800",
-    alt: "Pool Area",
-    category: "Pool"
+    src: suite4,
+    alt: "Suite",
+    category: "Rooms"
   },
   {
-    src: "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+    src: suite3,
+    alt: "Suite Interior",
+    category: "Rooms"
+  },
+  {
+    src: suite2,
+    alt: "Suite Interior",
+    category: "Rooms"
+  },
+  {
+    src: Interior2,
     alt: "Room Interior",
     category: "Rooms"
   },
   {
-    src: "https://images.pexels.com/photos/1450363/pexels-photo-1450363.jpeg?auto=compress&cs=tinysrgb&w=800",
-    alt: "Beach Coastline",
-    category: "Beach"
+    src: suite1,
+    alt: "Suite",
+    category: "Rooms"
   },
   {
-    src: "https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
-    alt: "Hotel Building",
-    category: "Exterior"
+    src: Interior1,
+    alt: "Room Interior",
+    category: "Rooms"
+  },
+    {
+    src: Interior3,
+    alt: "Room Interior",
+    category: "Rooms"
+  },
+  {
+    src: dryer,
+    alt: "Washing & dryer",
+    category: "Rooms"
+  },
+  {
+    src: pool1,
+    alt: "Pool Area",
+    category: "Pool"
+  },
+
+  {
+    src: pool2,
+    alt: "Pool Area",
+    category: "Pool"
+  },
+  {
+    src: pool3,
+    alt: "Pool Area",
+    category: "Pool"
+  },
+  {
+    src: pool4,
+    alt: "Pool Area",
+    category: "Pool"
+  },
+    {
+    src: parking1,
+    alt: "Parking Area",
+    category: "Parking"
+  },
+  {
+    src: parking2,
+    alt: "parking Area",
+    category: "Parking"
   }
+
 ];
 
-const categories = ["All", "Rooms", "Beach", "Pool", "Exterior"];
+const categories = ["All", "Rooms", "Pool","Parking","Exterior"];
 
 export default function Gallery() {
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -103,7 +218,7 @@ export default function Gallery() {
       {/* Hero */}
       <section className="relative h-[40vh] min-h-[300px] overflow-hidden" data-testid="gallery-hero">
         <img
-          src="https://images.pexels.com/photos/1268855/pexels-photo-1268855.jpeg?auto=compress&cs=tinysrgb&w=1920"
+          src={exterior3}
           alt="Gallery"
           className="w-full h-full object-cover"
         />

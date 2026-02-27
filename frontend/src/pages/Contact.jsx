@@ -6,6 +6,7 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Phone, Mail, MapPin, Clock, Send, CheckCircle } from "lucide-react";
 import { toast } from "sonner";
+import image1 from "../photo/MOTEL EXTERIOR 1.jpg";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -42,7 +43,7 @@ export default function Contact() {
       {/* Hero */}
       <section className="relative h-[40vh] min-h-[300px] overflow-hidden" data-testid="contact-hero">
         <img
-          src="https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=1920"
+          src={image1}
           alt="Contact Us"
           className="w-full h-full object-cover"
         />
